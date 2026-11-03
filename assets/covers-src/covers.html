@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Capas das fitas — Entropy</title>
+<!-- Fonte das capas e lombadas do Arquivo. Exporte com: node assets/covers-src/export.mjs -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@400;500;600&family=Bebas+Neue&family=Oswald:wght@200;300;500&family=Anton&family=Barlow+Condensed:ital,wght@0,600;1,800;1,900&family=Michroma&family=Geist+Mono&family=Sora:wght@500;600&family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#333;padding:20px;display:flex;flex-direction:column;gap:20px}
+.row{display:flex;gap:20px}
+.cv{position:relative;width:660px;height:1000px;overflow:hidden}
+.sp{position:relative;width:168px;height:1000px;overflow:hidden;display:flex;flex-direction:column;align-items:center}
+.ph{position:absolute;background-repeat:no-repeat}
+.grain{position:absolute;inset:0;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .28 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");mix-blend-mode:overlay;z-index:20}
+.wear{position:absolute;inset:0;pointer-events:none;z-index:21;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08),inset 0 0 60px rgba(0,0,0,.45),inset 14px 0 30px -10px rgba(0,0,0,.5)}
+.eb{position:absolute;left:44px;top:40px;font:400 15px 'Geist Mono',monospace;letter-spacing:.3em;z-index:10}
+.badge{position:absolute;right:40px;bottom:38px;border:1.5px solid currentColor;padding:6px 10px;font:400 16px 'Geist Mono',monospace;letter-spacing:.18em;z-index:10}
+.mk{position:absolute;left:44px;bottom:40px;display:flex;align-items:center;gap:14px;z-index:10}
+.mk img:first-child{height:36px}.mk img:last-child{height:10px}
+.dark .mk img{filter:invert(1)}
+.sp .em{flex:none;width:100%;height:150px;display:grid;place-items:center;position:relative}
+.sp .em::after{content:'';position:absolute;left:30px;right:30px;bottom:0;height:1.5px;background:currentColor;opacity:.45}
+.sp .t{flex:1;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;white-space:nowrap}
+.sp .ft{margin-bottom:22px;display:flex;flex-direction:column;align-items:center;gap:12px;font:400 14px 'Geist Mono',monospace;letter-spacing:.14em}
+.sp .ft span{border:1.5px solid currentColor;padding:4px 7px}
+.sp .ft img{height:30px}
+.sp.dark .ft img{filter:invert(1)}
+</style>
+</head>
+<body>
+
+<!-- 01 AMIRA — perfumaria: âmbar, dourado e serifa clássica -->
+<div class="row" data-k="amira">
+  <div class="cv" style="background:#140d08;color:#e6c991">
+    <div class="ph" style="inset:0;background-image:url(../work/amira.jpg);background-size:1980px auto;background-position:-520px -30px;filter:saturate(1.05)"></div>
+    <div class="ph" style="inset:0;background:linear-gradient(180deg,rgba(20,13,8,.85) 0%,rgba(20,13,8,0) 22%,rgba(20,13,8,0) 50%,rgba(20,13,8,.92) 76%,#140d08 100%)"></div>
+    <div class="eb">FEITO POR ENTROPY</div>
+    <div style="position:absolute;left:44px;right:44px;bottom:150px;z-index:10">
+      <div style="font:400 15px 'Geist Mono';letter-spacing:.34em;color:#c9a96a">PERFUMARIA · SÃO LUÍS</div>
+      <div style="font:300 150px/0.9 'Cormorant Garamond',serif;letter-spacing:.02em;margin-top:18px;color:#f1dfb6">Amira</div>
+      <div style="font:italic 300 42px/1.1 'Cormorant Garamond',serif;margin-top:14px;color:#e6c991">Um aroma. Uma presença.</div>
+    </div>
+    <div class="mk"><img src="../brand/entropy-mark-light.png"><img src="../brand/entropy-wordmark-light.png"></div>
+    <div class="badge">E·01</div><div class="grain"></div><div class="wear"></div>
+  </div>
+  <div class="sp" style="background:linear-gradient(90deg,#1a110a,#2a1c10 50%,#1a110a);color:#e6c991">
+    <div class="em" style="color:#e6c991"><span style="font:italic 300 92px/1 'Cormorant Garamond'">A</span></div>
+    <div class="t" style="font:300 82px 'Cormorant Garamond',serif;letter-spacing:.06em">Amira</div>
+    <div class="ft"><img src="../brand/entropy-mark-light.png"><span>E·01</span></div>
+  </div>
+</div>
+
+<!-- 02 AEDON — SaaS: preto, creme e o mockup -->
+<div class="row" data-k="aedon">
+  <div class="cv" style="background:#0b0b0b;color:#f3efe6">
+    <div class="ph" style="left:-60px;right:-60px;top:330px;height:600px;background-image:url(../work/aedon.jpg);background-size:1700px auto;background-position:-760px -160px;transform:rotate(-6deg)"></div>
+    <div class="ph" style="inset:0;background:linear-gradient(180deg,#0b0b0b 0%,#0b0b0b 30%,rgba(11,11,11,0) 46%,rgba(11,11,11,0) 70%,#0b0b0b 92%)"></div>
+    <div class="eb" style="color:#e8d3a6">UMA CRIAÇÃO ENTROPY</div>
+    <div style="position:absolute;left:44px;right:44px;top:110px;z-index:10">
+      <div style="font:500 78px/1.02 'Inter',sans-serif;letter-spacing:-.035em">Sites que parecem <span style="color:#e8d3a6">caros.</span><br>Feitos hoje.</div>
+    </div>
+    <div style="position:absolute;left:44px;bottom:110px;z-index:10;font:600 30px 'Inter';letter-spacing:.42em">AEDON</div>
+    <div style="position:absolute;right:40px;bottom:104px;z-index:10;background:#e8d3a6;color:#0b0b0b;border-radius:99px;padding:12px 22px;font:600 20px 'Inter'">Criar site</div>
+    <div class="mk"><img src="../brand/entropy-mark-light.png"><img src="../brand/entropy-wordmark-light.png"></div>
+    <div class="badge" style="bottom:38px">E·02</div><div class="grain"></div><div class="wear"></div>
+  </div>
+  <div class="sp" style="background:#0e0e0e;color:#f3efe6">
+    <div class="em" style="color:#e8d3a6"><svg width="70" height="62" viewBox="0 0 70 62"><path d="M35 2 L68 60 H2 Z" fill="none" stroke="currentColor" stroke-width="3"/><path d="M22 44 H48" stroke="currentColor" stroke-width="3"/></svg></div>
+    <div class="t" style="font:600 56px 'Inter';letter-spacing:.42em">AEDON</div>
+    <div class="ft"><img src="../brand/entropy-mark-light.png"><span>E·02</span></div>
+  </div>
+</div>
+
+<!-- 03 PIVÔ — calçados: vermelho tijolo, condensada alta -->
+<div class="row" data-k="pivo">
+  <div class="cv" style="background:#6b2314;color:#fbe9df">
+    <div class="ph" style="inset:0;background-image:url(../work/pivo.jpg);background-size:1180px auto;background-position:-258px -62px"></div>
+    <div class="ph" style="inset:0;background:linear-gradient(180deg,#6b2314 0%,rgba(107,35,20,0) 9%,rgba(107,35,20,0) 44%,#6b2314 54%,#5a1d10 100%)"></div>
+    <div class="eb">ESTUDO ENTROPY</div>
+    <div style="position:absolute;left:44px;right:44px;bottom:118px;z-index:10;display:flex;justify-content:space-between;align-items:end">
+      <div style="font:200 104px/0.9 'Oswald',sans-serif;letter-spacing:.32em">PIVÔ</div>
+      <div style="font:400 15px/1.5 'Geist Mono';letter-spacing:.2em;text-align:right;color:#f4b9a2">BOLSAS<br>ANABELAS<br>SALTO FINO</div>
+    </div>
+    <div class="mk"><img src="../brand/entropy-mark-light.png"><img src="../brand/entropy-wordmark-light.png"></div>
+    <div class="badge">E·03</div><div class="grain"></div><div class="wear"></div>
+  </div>
+  <div class="sp" style="background:linear-gradient(90deg,#5a1d10,#8a3220 50%,#5a1d10);color:#fbe9df">
+    <div class="em" style="color:#fbe9df"><span style="font:200 86px/1 'Oswald';letter-spacing:.02em">P</span></div>
+    <div class="t" style="font:200 80px 'Oswald';letter-spacing:.3em">PIVÔ</div>
+    <div class="ft"><img src="../brand/entropy-mark-light.png"><span>E·03</span></div>
+  </div>
+</div>
+
+<!-- 04 AURÉA — alta joalheria: preto, ouro e serifa itálica -->
+<div class="row" data-k="aurea">
+  <div class="cv" style="background:#0a0806;color:#e2c58c">
+    <div class="ph" style="inset:0;background-image:url(../work/aurea.jpg);background-size:1640px auto;background-position:-760px -40px"></div>
+    <div class="ph" style="inset:0;background:linear-gradient(180deg,rgba(10,8,6,.9),rgba(10,8,6,0) 26%,rgba(10,8,6,0) 56%,rgba(10,8,6,.95) 80%)"></div>
+    <div class="eb">ESTUDO ENTROPY</div>
+    <div style="position:absolute;left:0;right:0;top:96px;text-align:center;z-index:10;font:400 54px 'Cormorant Garamond';letter-spacing:.5em;padding-left:.5em;color:#ead3a0">AURÉA</div>
+    <div style="position:absolute;left:44px;right:44px;bottom:140px;z-index:10;color:#f3e6c8">
+      <div style="font:300 58px/1.05 'Cormorant Garamond'">O extraordinário<br>não passa.</div>
+      <div style="font:italic 300 74px/1 'Cormorant Garamond';color:#d7b26a;margin-top:6px">Permanece.</div>
+    </div>
+    <div class="mk"><img src="../brand/entropy-mark-light.png"><img src="../brand/entropy-wordmark-light.png"></div>
+    <div class="badge">E·04</div><div class="grain"></div><div class="wear"></div>
+  </div>
+  <div class="sp" style="background:linear-gradient(90deg,#0e0b07,#1c160d 50%,#0e0b07);color:#e2c58c">
+    <div class="em" style="color:#e2c58c"><svg width="78" height="78" viewBox="0 0 78 78"><path d="M39 6 L72 39 L39 72 L6 39 Z" fill="none" stroke="currentColor" stroke-width="1.6"/><text x="39" y="51" text-anchor="middle" font-family="Cormorant Garamond" font-size="36" fill="currentColor">A</text></svg></div>
+    <div class="t" style="font:400 58px 'Cormorant Garamond';letter-spacing:.5em">AURÉA</div>
+    <div class="ft"><img src="../brand/entropy-mark-light.png"><span>E·04</span></div>
+  </div>
+</div>
+
+<!-- 05 HILDO MOTOS — concessionária: vermelho de estúdio, grotesca pesada -->
+<div class="row" data-k="hildo">
+  <div class="cv" style="background:#120606;color:#fff">
+    <div class="ph" style="inset:0;background-image:url(../work/hildo.jpg);background-size:1500px auto;background-position:-640px 70px"></div>
+    <div class="ph" style="inset:0;background:linear-gradient(180deg,#120606 0%,rgba(18,6,6,.6) 22%,rgba(18,6,6,0) 40%,rgba(18,6,6,0) 66%,#120606 84%)"></div>
+    <div class="eb" style="color:#ff8f7a">ESTUDO ENTROPY</div>
+    <div style="position:absolute;left:44px;right:44px;top:100px;z-index:10">
+      <div style="font:400 120px/0.88 'Anton',sans-serif;letter-spacing:.01em">HILDO<br><span style="color:#e3321f">MOTOS</span></div>
+    </div>
+    <div style="position:absolute;left:44px;right:44px;bottom:118px;z-index:10;font:400 48px/1 'Anton';letter-spacing:.01em">SAI DE MOTO,<br>PAGA AOS POUCOS.</div>
+    <div class="mk"><img src="../brand/entropy-mark-light.png"><img src="../brand/entropy-wordmark-light.png"></div>
+    <div class="badge">E·05</div><div class="grain"></div><div class="wear"></div>
+  </div>
+  <div class="sp" style="background:linear-gradient(90deg,#7a120a,#c2281a 50%,#7a120a);color:#fff">
+    <div class="em" style="color:#fff"><span style="font:400 64px/1 'Anton';letter-spacing:.02em">H<span style="color:#ff6b5a">M</span></span></div>
+    <div class="t" style="font:400 74px 'Anton';letter-spacing:.04em">HILDO MOTOS</div>
+    <div class="ft"><img src="../brand/entropy-mark-light.png"><span>E·05</span></div>
+  </div>
+</div>
+
+<!-- 06 IMPETUS — IA: preto e a explosão vermelha -->
+<div class="row" data-k="impetus">
+  <div class="cv" style="background:#060606;color:#fff">
+    <div class="ph" style="inset:0;background-image:url(../work/impetus.jpg);background-size:2300px auto;background-position:-1080px -80px"></div>
+    <div class="ph" style="inset:0;background:linear-gradient(180deg,rgba(6,6,6,.6),rgba(6,6,6,0) 20%,rgba(6,6,6,0) 52%,#060606 76%)"></div>
+    <div class="eb" style="color:#ff5a52">UMA CRIAÇÃO ENTROPY</div>
+    <div style="position:absolute;left:44px;right:44px;bottom:130px;z-index:10">
+      <div style="font:600 34px 'Sora';letter-spacing:.06em;display:flex;align-items:center;gap:14px">➤ Impetus</div>
+      <div style="font:600 76px/1.0 'Sora';letter-spacing:-.03em;margin-top:22px">Uma entidade.<br><span style="color:#ff3b30">Várias máquinas.</span></div>
+    </div>
+    <div class="mk"><img src="../brand/entropy-mark-light.png"><img src="../brand/entropy-wordmark-light.png"></div>
+    <div class="badge">E·06</div><div class="grain"></div><div class="wear"></div>
+  </div>
+  <div class="sp" style="background:#0a0a0a;color:#fff">
+    <div class="em" style="color:#ff3b30"><svg width="76" height="76" viewBox="0 0 76 76"><g stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="38" y1="38" x2="72.0" y2="38.0" opacity="0.45"/><line x1="38" y1="38" x2="67.4" y2="55.0" opacity="1.0"/><line x1="38" y1="38" x2="55.0" y2="67.4" opacity="0.45"/><line x1="38" y1="38" x2="38.0" y2="72.0" opacity="1.0"/><line x1="38" y1="38" x2="21.0" y2="67.4" opacity="0.45"/><line x1="38" y1="38" x2="8.6" y2="55.0" opacity="1.0"/><line x1="38" y1="38" x2="4.0" y2="38.0" opacity="0.45"/><line x1="38" y1="38" x2="8.6" y2="21.0" opacity="1.0"/><line x1="38" y1="38" x2="21.0" y2="8.6" opacity="0.45"/><line x1="38" y1="38" x2="38.0" y2="4.0" opacity="1.0"/><line x1="38" y1="38" x2="55.0" y2="8.6" opacity="0.45"/><line x1="38" y1="38" x2="67.4" y2="21.0" opacity="1.0"/></g><circle cx="38" cy="38" r="7" fill="currentColor"/></svg></div>
+    <div class="t" style="font:600 60px 'Sora';letter-spacing:.06em">IMPETUS</div>
+    <div class="ft" style="color:#ff3b30"><img src="../brand/entropy-mark-light.png"><span>E·06</span></div>
+  </div>
+</div>
+
+<!-- 07 CARDÁPIO WEB — restaurante: creme, marrom e as fotos dos pratos -->
+<div class="row" data-k="cardapio">
+  <div class="cv dark" style="background:#f6ece0;color:#3a1d12">
+    <div class="ph" style="left:0;right:0;top:0;height:470px;background-image:url(../work/cardapio.jpg);background-size:2200px auto;background-position:-900px 0;filter:brightness(.42) blur(1.5px)"></div>
+    <div class="ph" style="left:0;right:0;top:0;height:470px;background:linear-gradient(180deg,rgba(40,18,10,.4),rgba(40,18,10,.2) 60%,#f6ece0 100%)"></div>
+    <div class="eb" style="color:#f6ece0">UMA CRIAÇÃO ENTROPY</div>
+    <div style="position:absolute;left:44px;right:44px;top:150px;z-index:10;color:#fff3e6">
+      <div style="font:400 15px 'Geist Mono';letter-spacing:.3em;color:#f0c39c">CARDÁPIO WEB</div>
+      <div style="font:italic 400 92px/1 'Playfair Display',serif;margin-top:16px">Sabor<br>&amp; Brasa</div>
+    </div>
+    <div class="ph" style="left:44px;right:44px;top:520px;height:286px;background-image:url(../work/cardapio.jpg);background-size:auto 900px;background-position:-128px -555px"></div>
+    <div style="position:absolute;left:44px;right:44px;top:830px;z-index:10;font:500 36px 'Playfair Display';color:#3a1d12">O seu momento de sabor.</div>
+    <div class="mk"><img src="../brand/entropy-mark-light.png"><img src="../brand/entropy-wordmark-light.png"></div>
+    <div class="badge" style="color:#3a1d12">E·07</div><div class="grain" style="mix-blend-mode:multiply;opacity:.5"></div><div class="wear" style="box-shadow:inset 0 0 50px rgba(60,30,10,.25)"></div>
+  </div>
+  <div class="sp dark" style="background:#f6ece0;color:#3a1d12">
+    <div class="em" style="color:#b0442a"><span style="font:italic 400 58px/1 'Playfair Display'">S&amp;B</span></div>
+    <div class="t" style="font:italic 400 58px 'Playfair Display'">Cardápio Web</div>
+    <div class="ft" style="color:#b0442a"><img src="../brand/entropy-mark-light.png"><span>E·07</span></div>
+  </div>
+</div>
+
+<!-- 08 GL FIGHT — luta: preto e roxo elétrico, itálico pesado -->
+<div class="row" data-k="glfight">
+  <div class="cv" style="background:#07050c;color:#fff">
+    <div class="ph" style="inset:0;background-image:url(../work/glfight.jpg);background-size:1700px auto;background-position:-780px -150px"></div>
+    <div class="ph" style="inset:0;background:linear-gradient(180deg,rgba(7,5,12,.5),rgba(7,5,12,0) 20%,rgba(7,5,12,0) 46%,rgba(30,6,60,.85) 70%,#07050c 92%)"></div>
+    <div class="eb" style="color:#c48bff">ESTUDO ENTROPY</div>
+    <div style="position:absolute;left:44px;right:44px;bottom:126px;z-index:10;font:italic 900 86px/0.92 'Barlow Condensed',sans-serif;text-transform:uppercase">
+      Sua força.<br>Sua luta.<br><span style="color:#a14dff">Seu estilo.</span>
+    </div>
+    <div style="position:absolute;right:40px;top:96px;z-index:10;font:italic 900 70px/0.8 'Barlow Condensed';color:#a14dff;text-align:right">GL<br><span style="color:#fff;font-size:52px">FIGHT</span></div>
+    <div class="mk"><img src="../brand/entropy-mark-light.png"><img src="../brand/entropy-wordmark-light.png"></div>
+    <div class="badge">E·08</div><div class="grain"></div><div class="wear"></div>
+  </div>
+  <div class="sp" style="background:linear-gradient(90deg,#2a0a52,#6a1fd0 50%,#2a0a52);color:#fff">
+    <div class="em" style="color:#c48bff"><span style="font:italic 900 74px/1 'Barlow Condensed'">GL</span></div>
+    <div class="t" style="font:italic 900 84px 'Barlow Condensed';letter-spacing:.02em">GL FIGHT</div>
+    <div class="ft"><img src="../brand/entropy-mark-light.png"><span>E·08</span></div>
+  </div>
+</div>
+
+<!-- 09 ILHA IMPORTS — moda fitness: preto e amarelo sol -->
+<div class="row" data-k="ilha">
+  <div class="cv" style="background:#0d0b06;color:#fff">
+    <svg class="ph" style="inset:0" viewBox="0 0 660 1000">
+      <defs><radialGradient id="sg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffd23f"/><stop offset=".7" stop-color="#f5b400"/><stop offset="1" stop-color="#b37a00"/></radialGradient></defs>
+      <g transform="translate(470 930)">
+        <g stroke="#f5b400" stroke-width="22" stroke-linecap="round">
+          <line x1="0" y1="-250" x2="0" y2="-330"/><line x1="-150" y1="-205" x2="-200" y2="-270"/><line x1="150" y1="-205" x2="200" y2="-270"/>
+          <line x1="-240" y1="-80" x2="-318" y2="-104"/><line x1="240" y1="-80" x2="318" y2="-104"/>
+        </g>
+        <circle r="200" fill="url(#sg)"/><circle r="200" fill="none" stroke="#0d0b06" stroke-width="6" stroke-dasharray="2 18" opacity=".25"/>
+      </g>
+    </svg>
+    <div class="eb" style="color:#f5b400">ESTUDO ENTROPY</div>
+    <div style="position:absolute;left:44px;top:108px;z-index:10;background:#f5b400;color:#0d0b06;font:italic 900 26px 'Barlow Condensed';letter-spacing:.06em;padding:4px 12px">A ILHA IMPORTS É SUA</div>
+    <div style="position:absolute;left:44px;right:44px;top:160px;z-index:10;font:italic 900 128px/0.86 'Barlow Condensed';text-transform:uppercase">Moda<br>fitness<br><span style="color:#f5b400">de marca</span></div>
+    <div class="mk"><img src="../brand/entropy-mark-light.png"><img src="../brand/entropy-wordmark-light.png"></div>
+    <div class="badge">E·09</div><div class="grain"></div><div class="wear"></div>
+  </div>
+  <div class="sp dark" style="background:#f5b400;color:#0d0b06">
+    <div class="em" style="color:#0d0b06"><svg width="84" height="60" viewBox="0 0 84 60"><path d="M10 56 A32 32 0 0 1 74 56 Z" fill="currentColor"/><g stroke="currentColor" stroke-width="5" stroke-linecap="round"><line x1="42" y1="4" x2="42" y2="14"/><line x1="16" y1="14" x2="22" y2="22"/><line x1="68" y1="14" x2="62" y2="22"/></g></svg></div>
+    <div class="t" style="font:italic 900 80px 'Barlow Condensed';letter-spacing:.02em">ILHA IMPORTS</div>
+    <div class="ft"><img src="../brand/entropy-mark-light.png"><span>E·09</span></div>
+  </div>
+</div>
+
+<!-- 10 CNM — automobilismo: preto, vermelho de corrida e linhas de pista -->
+<div class="row" data-k="cnm">
+  <div class="cv" style="background:#0b0b0c;color:#fff">
+    <svg class="ph" style="inset:0" viewBox="0 0 660 1000" preserveAspectRatio="none">
+      <g fill="none" stroke="#e1251b">
+        <path d="M-40 760 L250 760 L520 300 L720 300" stroke-width="3"/>
+        <path d="M-40 800 L270 800 L540 340 L720 340" stroke-width="1.2" opacity=".5"/>
+        <path d="M-40 840 L290 840 L560 380 L720 380" stroke-width="1" opacity=".25"/>
+      </g>
+      <g fill="#e1251b" opacity=".9"><rect x="44" y="880" width="18" height="18"/><rect x="62" y="898" width="18" height="18"/><rect x="80" y="880" width="18" height="18"/><rect x="98" y="898" width="18" height="18"/></g>
+    </svg>
+    <div class="eb" style="color:#ff6b62">ESTUDO ENTROPY</div>
+    <div style="position:absolute;left:44px;top:150px;z-index:10;font:400 14px 'Geist Mono';letter-spacing:.3em;color:#e1251b">TEMPORADA · GRID OFICIAL</div>
+    <div style="position:absolute;left:40px;top:180px;z-index:10;font:italic 900 230px/0.9 'Barlow Condensed';letter-spacing:-.01em">CNM</div>
+    <div style="position:absolute;left:44px;top:400px;z-index:10;font:italic 600 46px/1 'Barlow Condensed';color:transparent;-webkit-text-stroke:1.4px #fff;letter-spacing:.02em">COPA NEXUS<br>MONOSPOTO</div>
+    <div style="position:absolute;right:44px;bottom:180px;z-index:10;font:400 22px/1.4 'Inter';text-align:right;color:#cfcfcf;max-width:330px">Onde nascem as lendas do Monospoto.</div>
+    <div class="mk"><img src="../brand/entropy-mark-light.png"><img src="../brand/entropy-wordmark-light.png"></div>
+    <div class="badge">E·10</div><div class="grain"></div><div class="wear"></div>
+  </div>
+  <div class="sp" style="background:#0e0e10;color:#fff">
+    <div class="em" style="color:#fff"><svg width="80" height="60" viewBox="0 0 80 60"><rect x="8" y="6" width="16" height="16" fill="#e1251b"/><rect x="24" y="6" width="16" height="16" fill="none"/><rect x="40" y="6" width="16" height="16" fill="#e1251b"/><rect x="56" y="6" width="16" height="16" fill="none"/><rect x="8" y="22" width="16" height="16" fill="none"/><rect x="24" y="22" width="16" height="16" fill="#e1251b"/><rect x="40" y="22" width="16" height="16" fill="none"/><rect x="56" y="22" width="16" height="16" fill="#e1251b"/><rect x="8" y="38" width="16" height="16" fill="#e1251b"/><rect x="24" y="38" width="16" height="16" fill="none"/><rect x="40" y="38" width="16" height="16" fill="#e1251b"/><rect x="56" y="38" width="16" height="16" fill="none"/><rect x="8" y="6" width="64" height="48" fill="none" stroke="#e1251b" stroke-width="1.5"/></svg></div>
+    <div class="t" style="font:italic 900 84px 'Barlow Condensed';letter-spacing:.02em">CNM <span style="color:#e1251b">·</span> MONOSPOTO</div>
+    <div class="ft" style="color:#e1251b"><img src="../brand/entropy-mark-light.png"><span>E·10</span></div>
+  </div>
+</div>
+
+</body>
+</html>

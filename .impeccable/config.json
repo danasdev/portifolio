@@ -1,0 +1,29 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-03T03:12:24.559Z",
+        "reason": "spec-mandated: user supplied exact CSS (Vante 'use verbatim', hero 'exact values'); padding values like #cross i, #pager, .cta come straight from the prompts"
+      },
+      {
+        "rule": "overused-font",
+        "value": "geist",
+        "createdAt": "2026-11-03T03:32:21.336Z",
+        "reason": "brand-mandated: Entropy design system (claude.ai/artifact/AiZwye3c3jQyHMbtHQL6ci) sets Geist as the text face"
+      },
+      {
+        "rule": "overused-font",
+        "value": "geist mono",
+        "createdAt": "2026-11-03T03:32:21.362Z",
+        "reason": "brand-mandated: Entropy design system sets Geist Mono for eyebrows and metadata"
+      }
+    ]
+  }
+}
